@@ -1,1 +1,1 @@
-import "./js/module-1-1"
+import "./js/module-1-1.js"
