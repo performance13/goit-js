@@ -160,3 +160,4 @@ console.log(checkPassword(`polyhax`));
 console.log(checkPassword(`jqueryismyjam`));
 
 // 
+console.log(9);
