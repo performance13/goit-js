@@ -17,6 +17,7 @@ console.log(makeOrderMessage(10, 70, 200));
 function isAdult(age) {
   // Change code below this line
   const passed = age>=18;
+
   // Change code above this line
   return passed;
 }
@@ -28,17 +29,13 @@ console.log(isAdult(8));
 function isValidPassword(password) {
   const SAVED_PASSWORD = 'jqueryismyjam';
   // Change code below this line
-  const isMatch = password === 'jqueryismyjam';
-
-  // Change code above this line
-  return isMatch;
-}
-
-function isValidPassword(password) {
-  const SAVED_PASSWORD = 'jqueryismyjam';
-  // Change code below this line
   const isMatch = password===SAVED_PASSWORD;
 
   // Change code above this line
   return isMatch;
 }
+console.log(isValidPassword('jqueryismyjam'));
+console.log(isValidPassword('mangodab3st'));
+console.log(isValidPassword('mangodab3st'));
+
+// 
