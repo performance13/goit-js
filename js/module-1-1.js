@@ -188,4 +188,37 @@ console.log(checkStorage(200, 20));
 console.log(checkStorage(200, 250));
 console.log(checkStorage(150, 0));
 
+//
+function isNumberInRange(start, end, number) {
+  const isInRange = number>=start && number<=end; // Change this line
+
+  return isInRange;
+}
+
+isNumberInRange(10, 30, 17);
+isNumberInRange(10, 30, 5);
+isNumberInRange(20, 50, 24);
+isNumberInRange(20, 50, 76);
+
+console.log(isNumberInRange(10, 30, 17));
+console.log(isNumberInRange(10, 30, 5));
+console.log(isNumberInRange(20, 50, 24));
+console.log(isNumberInRange(20, 50, 76)); 
+
+// 
+function checkIfCanAccessContent(subType) {
+  const canAccessContent = subType===`pro` || subType===`vip`; // Change this line
+
+  return canAccessContent;
+}
+checkIfCanAccessContent("pro");
+checkIfCanAccessContent("starter");
+checkIfCanAccessContent("vip");
+checkIfCanAccessContent("free");
+
+console.log(checkIfCanAccessContent("pro"));
+console.log(checkIfCanAccessContent("starter"));
+console.log(checkIfCanAccessContent("vip"));
+console.log(checkIfCanAccessContent("free"));
+
 // 
