@@ -207,7 +207,7 @@ console.log(isNumberInRange(20, 50, 76));
 
 // 
 function checkIfCanAccessContent(subType) {
-  const canAccessContent = subType===`pro` || subType===`vip`; // Change this line
+  const canAccessContent = subType === `pro` || subType === `vip`; // Change this line
 
   return canAccessContent;
 }
@@ -222,3 +222,21 @@ console.log(checkIfCanAccessContent("vip"));
 console.log(checkIfCanAccessContent("free"));
 
 // 
+function isNumberNotInRange(start, end, number) {
+  const isInRange = number >= start && number <= end;
+  const isNotInRange = !isInRange; // Change this line
+
+  return isNotInRange;
+}
+isNumberNotInRange(10, 30, 17);
+isNumberNotInRange(10, 30, 5);
+isNumberNotInRange(20, 50, 24);
+isNumberNotInRange(20, 50, 76);
+
+console.log(isNumberNotInRange(10, 30, 17));
+console.log(isNumberNotInRange(10, 30, 5));
+console.log(isNumberNotInRange(20, 50, 24));
+console.log(isNumberNotInRange(20, 50, 76));
+
+// 
+
