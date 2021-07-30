@@ -479,11 +479,88 @@ function getSubstring(string, length) {
 
   return substring;
 }
-console.log(getSubstring("Hello world", 3).length);
-console.log(getSubstring("Hello world", 6).length);
-console.log(getSubstring("Hello world", 8).length);
-console.log(getSubstring("Hello world", 11).length);
-console.log(getSubstring("Hello world", 0).length);
+console.log(getSubstring("Hello world", 3));
+console.log(getSubstring("Hello world", 6));
+console.log(getSubstring("Hello world", 8));
+console.log(getSubstring("Hello world", 11));
+console.log(getSubstring("Hello world", 0));
 
 // 
+function formatMessage(message, maxLength) {
+  let result;
+  // Change code below this line
+  
+if (message.length > maxLength) {
+        result = message.slice(message, maxLength) + '...';
+      } else {
+        result = message.slice(message, maxLength)
+      }
+   
+        return result;
+
+}
+console.log(formatMessage("Curabitur ligula sapien", 16));
+console.log(formatMessage("Curabitur ligula sapien", 23));
+console.log(formatMessage("Vestibulum facilisis purus nec", 20));
+console.log(formatMessage("Vestibulum facilisis purus nec", 30));
+console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15));
+console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41));
+
+// 
+function normalizeInput(input) {
+  const normalizedInput = input.toLowerCase(); // Change this line
+
+  return normalizedInput;
+}
+
+
+console.log(normalizeInput("Hello world").toLowerCase());
+console.log(normalizeInput("This ISN'T SpaM").toLowerCase());
+console.log(normalizeInput("Big SALE").toLowerCase());
+
+// 
+function checkForName(fullName, name) {
+ const result = fullName.includes(name); // Change this line
+  return result;
+}
+checkForName("Egor Kolbasov", "Egor");
+checkForName("Egor Kolbasov", "egor");
+checkForName("Egor Kolbasov", "egOr");
+checkForName("Egor Kolbasov", "Zhenya");
+checkForName("Vadim Nekrasov", "Vadim");
+checkForName("Vadim Nekrasov", "vadim");
+checkForName("Vadim Nekrasov", "Dima");
+
+console.log(checkForName("Egor Kolbasov", "Egor"));
+console.log(checkForName("Egor Kolbasov", "egor"));
+console.log(checkForName("Egor Kolbasov", "egOr"));
+console.log(checkForName("Egor Kolbasov", "Zhenya"));
+console.log(checkForName("Vadim Nekrasov", "Vadim"));
+console.log(checkForName("Vadim Nekrasov", "vadim"));
+console.log(checkForName("Vadim Nekrasov", "Dima"));
+
+// 
+function checkForSpam(message) {
+  let result;
+  // Change code below this line
+result = message.toLowerCase().includes("spam") || message.toLowerCase().includes("sale");
+  // Change code above this line
+  return result;
+}
+
+checkForSpam("Latest technology news");
+checkForSpam("JavaScript weekly newsletter");
+checkForSpam("Get best sale offers now!");
+checkForSpam("Amazing SalE, only tonight!");
+checkForSpam("Trust me, this is not a spam message");
+checkForSpam("Get rid of sPaM emails. Our book in on sale!");
+checkForSpam("[SPAM] How to earn fast money?");
+
+console.log(checkForSpam("Latest technology news"));
+console.log(checkForSpam("JavaScript weekly newsletter"));
+console.log(checkForSpam("Get best sale offers now!"));
+console.log(checkForSpam("Amazing SalE, only tonight!"));
+console.log(checkForSpam("Trust me, this is not a spam message"));
+console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!"));
+console.log(checkForSpam("[SPAM] How to earn fast money?"));
 
