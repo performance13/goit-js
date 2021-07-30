@@ -474,4 +474,16 @@ console.log(courseTopic[0]);
 console.log(courseTopic[20]);
 
 // 
+function getSubstring(string, length) {
+  const substring = string.slice(0, length); // Change this line
+
+  return substring;
+}
+console.log(getSubstring("Hello world", 3).length);
+console.log(getSubstring("Hello world", 6).length);
+console.log(getSubstring("Hello world", 8).length);
+console.log(getSubstring("Hello world", 11).length);
+console.log(getSubstring("Hello world", 0).length);
+
+// 
 
