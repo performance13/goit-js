@@ -308,3 +308,170 @@ console.log(checkStorage(200, 150));
 console.log(checkStorage(150, 180));
 
 // 
+function checkPassword(password) {
+  const ADMIN_PASSWORD = "jqueryismyjam";
+  let message;
+  // Change code below this line
+message = password === ADMIN_PASSWORD ? "Access is allowed" : "Access denied, wrong password!"
+  // Change code above this line
+  return message;
+}
+
+checkPassword("jqueryismyjam");
+checkPassword("angul4r1sl1f3");
+checkPassword("r3actsux");
+
+console.log(checkPassword("jqueryismyjam"));
+console.log(checkPassword("angul4r1sl1f3"));
+console.log(checkPassword("r3actsux"));
+
+// 
+function getSubscriptionPrice(type) {
+  let price;
+  // Change code below this line
+
+ switch (type) { // Change this line
+   case "starter" :// Change this line
+      price = 0; // Change this line
+      break;
+
+    case "professional" : // Change this line
+      price = 20; // Change this line
+      break;
+
+    case "organization" : // Change this line
+      price = 50; // Change this line
+      break;
+  }
+
+  // Change code above this line
+  return price;
+}
+
+getSubscriptionPrice("professional");
+getSubscriptionPrice("organization");
+getSubscriptionPrice("starter");
+
+console.log(getSubscriptionPrice("professional"));
+console.log(getSubscriptionPrice("organization"));
+console.log(getSubscriptionPrice("starter"));
+
+// 
+function checkPassword(password) {
+  const ADMIN_PASSWORD = "jqueryismyjam";
+  let message;
+
+  // Change code below this line
+
+  if (password === null) {
+    message = "Canceled by user!";
+  } else if (password === ADMIN_PASSWORD) {
+    message = "Welcome!";
+  } else {
+    message = "Access denied, wrong password!";
+  }
+
+  // Change code above this line
+  
+  // Change code
+    switch(password) {  
+    case null:
+    	password = null;
+    	message = `Canceled by user!`;
+    	break;
+      
+    case ADMIN_PASSWORD:
+    	password = ADMIN_PASSWORD;
+    	message = `Welcome!`;
+    	break;
+      
+       
+    default:
+      message = `Access denied, wrong password!`;
+  }
+  // Change code
+  
+  return message;
+}
+
+checkPassword("mangohackzor");
+checkPassword(null);
+checkPassword("polyhax");
+checkPassword("jqueryismyjam");
+
+console.log(checkPassword("mangohackzor"));
+console.log(checkPassword(null));
+console.log(checkPassword("polyhax"));
+console.log(checkPassword("jqueryismyjam"));
+
+// 
+function getShippingCost(country) {
+  let message;
+  // Change code below this line
+  let price;
+  switch (country){
+    case 'China':
+      price = 100;
+      message = `Shipping to ${country} will cost ${price} credits`;
+      break;
+      
+    case 'Chile':
+      price = 250;
+      message = `Shipping to ${country} will cost ${price} credits`;
+      break;
+      
+      
+    case 'Australia':
+      price = 170;
+      message = `Shipping to ${country} will cost ${price} credits`;
+      break;
+      
+    case 'Jamaica':
+      price = 120;
+      message = `Shipping to ${country} will cost ${price} credits`;
+      break;
+      
+    default:
+      message = `Sorry, there is no delivery to your country`
+  }
+  
+  
+  
+  // Change code above this line
+  return message;
+}
+
+console.log(getShippingCost("Australia"));
+console.log(getShippingCost("Germany"));
+console.log(getShippingCost("China"));
+console.log(getShippingCost("Chile"));
+console.log(getShippingCost("Jamaica"));
+console.log(getShippingCost("Sweden"));
+
+// 
+function getNameLength(name) {
+  const message = `Name ${name} is ${name.length} characters long`; // Change this line
+
+  return message;
+}
+console.log(getNameLength("Poly"));
+console.log(getNameLength("Harambe"));
+console.log(getNameLength("Billy"));
+console.log(getNameLength("Joe"));
+
+// 
+const courseTopic = "JavaScript essentials";
+// Change code below this line
+
+const courseTopicLength = courseTopic.length;
+const firstElement = courseTopic[0];
+const lastElement = courseTopic[courseTopic.length - 1];
+
+// Change code above this line
+
+console.log(courseTopicLength);
+console.log(courseTopic[0]);
+console.log(courseTopic[20]);
+
+// 
+
