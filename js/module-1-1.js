@@ -585,3 +585,5 @@ Math.gcd = function() {
 // Попробуйте:
 
 console.log(Math.gcd(20, 30, 15, 70, 40)); // `5`
+
+// 
