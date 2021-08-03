@@ -48,13 +48,19 @@ const calculateTotalPrice = function (array) {
     for (const num of array) {
         total += num;
     }
-    let total = 0;
+    return total;
 }
-console.log(calculateTotalPrice([1, 2, 3])); //6
+
+const result1 = calculateTotalPrice([1, 2, 3]);
+
+//console.log(calculateTotalPrice([1, 2, 3])); //6
+
+console.log(`Общая сумма покупок ${result1}`);
+
 console.log(calculateTotalPrice([1, 2, 3,12,25,65,125])); //233
 console.log(calculateTotalPrice([1, 2, 3, 29, 97, 111])); //243
 
 // let total = 0; находится внутри тела функции
-// let total = 0; возвращение результата; выход с функции; возвращение значения во внешний код (внешний код - console.log(calculateTotalPrice([1, 2, 3])); - где функцию вызываем)
+// return total = 0; возвращение результата; выход с функции; возвращение значения во внешний код (внешний код - console.log(calculateTotalPrice([1, 2, 3])); - где функцию вызываем). return возвращает в то место где произошел вызов функции
 
-// Таким образом мы сделали код который можно переиспользовать
+// Таким образом мы сделали код который можно переиспользовать, масштабируемое решение
