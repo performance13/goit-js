@@ -587,3 +587,6 @@ Math.gcd = function() {
 console.log(Math.gcd(20, 30, 15, 70, 40)); // `5`
 
 // 
+
+// * Функция calculateTotalPrice(array) ,которая принимает массив цен (чисел) и возвращает их сумму
+
