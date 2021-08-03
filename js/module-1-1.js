@@ -587,35 +587,3 @@ Math.gcd = function() {
 console.log(Math.gcd(20, 30, 15, 70, 40)); // `5`
 
 // 
-
-function checkPassword(password) {
-  const ADMIN_PASSWORD = "javaScript";
-  let message;
-
-  if (password === null) {
-    message = "Canceled by user! Anyway thanks:)";
-  } else if (password === ADMIN_PASSWORD) {
-    message = "Welcome, are you ready?";
-  } else {
-    message = "Access denied, wrong password, try again!";
-  }
-
- 
-    switch(password) {  
-    case null:
-    	password = null;
-    	message = `Canceled by user! Anyway thanks:)`;
-    	break;
-      
-    case ADMIN_PASSWORD:
-    	password = ADMIN_PASSWORD;
-    	message = `Welcome, are you ready?`;
-    	break;
-            
-    default:
-      message = `Access denied, wrong password, try again!`;
-
-  }
-  
-  return message;
-}
