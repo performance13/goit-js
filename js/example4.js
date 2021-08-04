@@ -1,5 +1,5 @@
 // Это ф-я для файла example3.js с fo/of
-// В файле example5.js это написано с помощь тернарного оператора
+// В файле example4.2.js это написано с помощь тернарного оператора
 
 // * Напиши ф-ю findLogin , которая принимает все логины logins и один loginToFind который нужно найти в них => findLogin(allLogins, loginToFind
 
