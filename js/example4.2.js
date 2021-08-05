@@ -50,3 +50,5 @@ console.log(findLogin(logins, 'avocod3r'));
 console.log(findLogin(logins, 'kiwidab3st'));
 console.log(findLogin(logins, 'jam4l'));
 console.log(findLogin(logins, 'poly1scute'));
+
+// в параметре allLogins лежит то что лежит в logins, а в logins лежит массив ['m4ngoDoge', 'kiwidab3st', 'poly1scute', 'aj4xth3m4n']. Значит в параметр  allLogins будет записано значение переменной allLogins тоесть массив ['m4ngoDoge', 'kiwidab3st', 'poly1scute', 'aj4xth3m4n'].
