@@ -1,4 +1,4 @@
-// import "./js/module-1-1.js"
+// import "./js/module-1.js"
 // import "./js/example1.js"
 // import "./js/example2.js"
 // import "./js/example3.js"
@@ -8,4 +8,5 @@
 // import "./js/example5.js"
 // import "./js/example6.js"
 // import "./js/example7.js"
-import "./js/example8.js"
+// import "./js/example8.js"
+import "./js/exampleTest.js"
