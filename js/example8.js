@@ -75,16 +75,20 @@
 const filterNumbers = function (array, ...args) {
     console.log('array: ', args);
     console.log('args: ', args);
+    const uniqueElements = [];
 
     for (const element of array) {
         // console.log(element);
-        console.log(args.includes(element));
-
+        // console.log(args.includes(element));
         if (args.includes(element)) {
+            uniqueElements.push(element);
+
             console.log(`${element} есть везде!`)
         }
     }
     
+    // console.log(uniqueElements);
+    return uniqueElements;
 };
 
 console.log(filterNumbers([1, 2, 3, 4, 5], 10, 15, 2, 3, 8));// [2, 3]
