@@ -46,3 +46,5 @@ planets[0]; // "Earth"
 planets[2]; // "Venus"
 console.log(planets[0]);
 console.log(planets[2]);
+
+---
