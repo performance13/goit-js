@@ -41,10 +41,8 @@
 // add(10, 1, 2, 3);
 // add(15, 1, 2, 3, 4, 5);
 
-const planets = ["Earth", "Mars", "Venus"];
-planets[0]; // "Earth"
-planets[2]; // "Venus"
-console.log(planets[0]);
-console.log(planets[2]);
-
----
+// const planets = ["Earth", "Mars", "Venus"];
+// planets[0]; // "Earth"
+// planets[2]; // "Venus"
+// console.log(planets[0]);
+// console.log(planets[2]);
