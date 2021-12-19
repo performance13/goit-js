@@ -104,7 +104,14 @@ dist
 .tern-port
 
 #modules_task
-/modules_task
+modules_task/
 
 #lessons_task
-/lessons_task
+lessons_task/
+
+#
+example?.js
+example???.js
+first-4.js
+/index.js
+git rm -r --cached first-4.js/
